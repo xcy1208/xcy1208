@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: rgba(248, 244, 167, 0.801);
+            width: 90%;
+            height: 30%;
+            position:absolute;
+            left: 5%;
+            top: 5%;
+        }
+        h1{
+            position:relative;
+            left: 10%;
+            top: 5%;
+            color: black;
+            font-size: 70px;
+        }
+        p.a{
+            position:relative;
+            left: 10%;
+            top: -10%;
+            color: black;
+            font-size: 24px;
+        }
+        img{
+            width: 210px;
+            height: 210px;
+            border-radius: 55%;
+            object-fit: cover;
+            object-position: right;
+            position:relative;
+            left: -10%;
+            top: 1%;
+        }
+        aside{
+            background-color:rgb(222, 223, 191);
+            width: 25%;
+            height: auto;
+            position:absolute;
+            left: 70%;
+            top: 45%;
+        }
+        h3{
+            position:relative;
+            left: 5%;
+            top: 2%;
+            font-size: 24px;
+        }
+        p.b{
+            position:relative;
+            left: 8%;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        a{
+            color: darkblue;
+            text-decoration: none;
+            font-style: italic;
+        }
+        p.c{
+            position:relative;
+            left: 11%;
+            top: 2%;
+            font-size: 15px;
+        }
+        .skill-item {
+            margin-bottom: 15px;
+        }
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .bar-bg {
+            position:relative;
+            left: 5%;
+            width: 90%;
+            height: 10px;
+            background-color: #eee;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .bar-fill {
+            height: 100%;
+            width: 0;
+            background-color: var(--color);
+            border-radius: 5px;
+            animation: growBar 1.5s ease-out forwards;
+        }
+        @keyframes growBar {
+            from { width: 0; }
+            to { width: var(--width); }
+        }
+        span.a{
+            position:relative;
+            left: 5%;
+        }
+        span.b{
+            position:relative;
+            left: -3%;
+        }
+        section{
+            background-color: rgb(222, 223, 191);
+            width: 60%;
+            height: auto;
+            position:absolute;
+            left: 5%;
+            top: 45%;
+        }
+        footer{
+            text-align: center;
+            color: #eee;
+            background-color:#333;
+            width: 90%;
+            height: auto;
+            position:absolute;
+            left: 5%;
+            bottom:-55%;
+        }
+        div.a{
+            position:relative;
+            left: 8%;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        body{
+            font-family: 標楷體;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body bgcolor="darkgray">
+    <header>
+        <img src="C:\Users\tracy\OneDrive\桌面\11344129 mid\myphoto.jpg" align="right" shape="circle">
+        <h1>謝采妍</h1>
+        <p class="a">學習能力強，注重細節，以積極態度迎接每一項挑戰的職場新鮮人。 </p>
+    </header>
+    <aside>
+        <h3>聯絡資訊</h3>
+        <p class="b">手機:&nbsp;0901091673</p>
+        <p class="b">Email:&nbsp;<a href="mailto:tracy20051208@gmail.com" target="_blank">tracy20051208@gmail.com</a></p>
+        <p class="b">IG:&nbsp;<a href="https://www.instagram.com/xcy._.1208/" target="_blank">xcy._.1208</a></p>
+        <h3>學歷</h3>
+        <p class="b">中原大學-資訊管理學系</p>
+        <p class="c">輔系-財務金融學系</p>
+        <h3>專業技能</h3>
+        <div class="skill-item">
+            <div class="skill-info">
+                <span class="a">Python</span>
+                <span class="b">85%</span>
+            </div>
+            <div class="bar-bg">
+                <div class="bar-fill" style="--width: 85%; --color: #da83b0;"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-info">
+                <span class="a">Java</span>
+                <span class="b">90%</span>
+            </div>
+            <div class="bar-bg">
+                <div class="bar-fill" style="--width: 90%; --color: #da83b0;"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-info">
+                <span class="a">MySQL</span>
+                <span class="b">65%</span>
+            </div>
+            <div class="bar-bg">
+                <div class="bar-fill" style="--width: 65%; --color:  #da83b0;"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-info">
+                <span class="a">HTML&CSS</span>
+                <span class="b">69%</span>
+            </div>
+            <div class="bar-bg">
+                <div class="bar-fill" style="--width: 69%; --color:  #da83b0;"></div>
+            </div>
+        </div>
+    </aside>
+    <section>
+        <h3>個人簡介</h3>
+        <p class="b">具有管理資訊系統背景，擁有財務數據分析與資訊系統設計經驗。<br>
+            熟悉數據分析與視覺化工具，具備程式開發及資料庫設計能力，並對商業流程設計與專案管理充滿熱情。<br>
+            擁有清晰的邏輯思維與卓越的溝通協調能力，能有效轉化數據洞察為可執行的解決方案。</p>
+        <h3>優缺點</h3>
+        <div class="a">
+            <ul><b>優點</b>
+                <li>學習能力和態度良好</li>
+                <li>能迅速上手</li>
+            </ul>
+            <ul><b>缺點</b>
+                <li>較慢熱</li>
+            </ul>
+        </div>
+        <h3>個人經歷</h3>
+        <div class="a">
+            <ul><b>大一下-管理學</b>
+                <li><a href="C:\Users\tracy\OneDrive\桌面\11344129 mid\許厝港溼地淨灘活動期末報告.pptx">許厝港溼地淨灘活動</a><br>
+                    <p>透過實際參與淨灘活動，讓我們理解海洋污染的問題，並體會保護環境的重要性。</p>
+                </li>
+            </ul>
+            <ul><b>大二下-資料庫管理</b>
+                <li>Netflix資料庫設計<br>
+                    <p>透過分析Netflix的資料庫結構，學會自己寫出資料庫。</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p><small>版權所有&copy;謝采妍 最後更新日期:2026/4/25</small></p>
+    </footer>
+</body>
+</html>
